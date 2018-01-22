@@ -1,0 +1,3 @@
+(define (pal x)
+	(string? x (rev_string x)))
+	

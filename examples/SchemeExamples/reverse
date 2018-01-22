@@ -1,0 +1,6 @@
+(define (flip a_list)
+	(cond
+		((null? a_list) #t)
+		(else (r (cdr a_list))(write (car a_list)) #t)
+	)
+)

@@ -1,0 +1,21 @@
+(define (calc input subtotal)
+	(display "$")(display subtotal)(newline)(newline)
+	(display "Enter value: $")
+	(let ((val(read)))  
+	   (if(eq? val -1) 
+		(total subtotal)
+		(calc val (+ val subtotal))
+	   )
+	)
+)
+
+(define (total amount)
+	(newline)
+	(display "Subtotal: $")(display amount)(newline)
+	(display "Tax: $")(display (* amount 0.065))(newline)
+	(display "Total: $")(display (+ (* amount 0.065) amount))
+)
+
+(define (sale)
+	(calc 0 0) #t
+)

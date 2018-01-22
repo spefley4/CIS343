@@ -1,0 +1,4 @@
+ ls -l \
+	--reverse \
+	--human-readable \
+	--full-time
